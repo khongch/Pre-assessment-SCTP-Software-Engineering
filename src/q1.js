@@ -11,6 +11,17 @@
 
 function swap(x, y){
     // Task 1: Add code here
+    // Check if both x and y are numeric
+    if (typeof x !== "number" || typeof y !== "number") {
+        return -1;
+    }
+    // Perform the swap using addition and subtraction
+    x = x + y;
+    y = x - y;
+    x = x - y;
+    // Print the swapped values in the console
+    console.log("Swapped values: x = " + x + ", y = " + y);
+    return 0; 
 }
 
 // Task 2: Add code here
